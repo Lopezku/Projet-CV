@@ -1,0 +1,148 @@
+/*a{
+    text-decoration: none;
+    color:$couleur-lien;
+    &:hover{
+        color:$couleur-lien-survol;
+        font-weight:bold;
+    }
+}*/
+//nav
+nav {
+  height: 60px;
+  width: 100%;
+  background-color: $color-base-nav-liens;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.1);
+  color: #FFF;
+}
+.nav-container {
+  //width: 1440px;
+  margin: auto;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-container .nav-right {
+  width: 60%;
+  font-size: 20px;
+  height: 100%;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeue-BoldCondensed';
+}
+nav .nav-container .nav-right ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  list-style: none;
+  
+}
+.nav-right ul li a{
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  color: #7e7e7e;
+}
+.nav-right ul li a:hover {
+  border-top: 2px solid #7e7e7e;
+  color: #000000;
+}
+.nav-right ul li a:active, .nav-right ul li a:focus {
+  border-top: 2px solid white;
+  color: white;
+}
+a[href^="https"]::before {
+    content: "🔗 ";
+  }
+  
+  a[href^="mailto"]::before {
+    content: "📧 ";
+  }
+  
+  a[href^="tel"]::before {
+    content: "📞 ";
+  }
+  .cookie{
+    width: 20%;
+  }
+  img{
+    clip:rect(0, 0, 10px, 20px);
+    width: 60%;
+  }
+  a.imageCook{
+    font-size: 15px;
+    color:rgb(88, 83, 56);
+    
+  }
+  a.imageCook:hover{
+      font-size: 20px;
+      color:rgb(83, 81, 71);
+ }
+ a.imageCook:focus{
+  font-size: 25px;
+  color:rgb(83, 83, 80);
+
+ }
+a.imageCook:active{
+  font-size: 23px;
+  color:rgb(83, 83, 80);
+    text-transform: uppercase;
+}
+  .imageCook{
+    display:block;
+    width: 195px;
+    height: 181px;
+  background:url("./SASS/img/cookie-v1.png") -32px 0 no-repeat;
+  }
+  
+  .imageCook:hover{
+    display: block;
+width: 195px;
+height: 181px;
+background: url("./SASS/img/cookie-v1.png") -228px 6px no-repeat;
+  }
+ 
+  .imageCook:focus{
+    display: block;
+width: 195px;
+height: 181px;
+background: url("./SASS/img/cookie-v1.png") -439px -18px no-repeat;
+
+  }
+  .imageCook:active{
+    display: block;
+width: 195px;
+height: 181px;
+background: url("./SASS/img/cookie-v1.png") -409px -196px no-repeat;
+}
+// anim Jerome Lopez nav
+.nav-left {
+  margin: 2%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  }
+  .signature {
+  position: relative;
+  font-family: Impact, sans-serif;
+  font-size: 45px;
+  letter-spacing: 6px;
+  background: linear-gradient(90deg, #E39E6C, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  @keyframes animate {
+  0% {
+  background-position: -500%;
+  }
+  100% {
+  background-position: 500%;
+  }
+  }
